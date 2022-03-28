@@ -1,3 +1,37 @@
+/* FONTS */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-v8-latin-regular.woff2") format("woff2"), 
+        url("../fonts/inter-v8-latin-regular.woff") format("woff");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/inter-v8-latin-500.woff2") format("woff2"), 
+        url("../fonts/inter-v8-latin-500.woff") format("woff");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/inter-v8-latin-600.woff2") format("woff2"), 
+        url("../fonts/inter-v8-latin-600.woff") format("woff");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-v8-latin-700.woff2") format("woff2"), 
+        url("../fonts/inter-v8-latin-700.woff") format("woff");
+    font-display: swap;
+  }
+
 html {
     height: 100%;
     scroll-behavior: smooth;
@@ -14,19 +48,23 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #fff;
-    font-family: "Bebas Neue", "Arial", sans-serif;
+    background-color: #E7E7E7;
+    font-family: "Inter", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 2px;
-    color: #1E90FF;
+    font-size: 16px;
+    line-height: 19px;
+    color: #555;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
 }
 
 .container {
