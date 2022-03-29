@@ -44,6 +44,19 @@ html {
     box-sizing: inherit;
 }
 
+*:focus {
+    outline: 4px dashed #ff7500;
+    outline-offset: 2px;
+}
+
+.bg-img-link:focus {
+    outline: 4px dashed #555;
+}
+
+input:focus {
+    outline: none;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -89,6 +102,8 @@ a {
 
 /* BG-IMG */
 .bg-img {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 640px;
     border-radius: 20px;
@@ -100,6 +115,7 @@ a {
 }
 
 .bg-img-top {
+    flex-grow: 1;
     padding: 60px;
     padding-bottom: 0;
 }
@@ -147,9 +163,94 @@ a {
     background-color: #4DC490;
     padding: 28px ;
     border-radius: 0 0 20px 20px;
+    transition: background-color 0.4s ease;
+}
+
+.bg-img-link:hover {
+    background-color: rgba(77, 196, 144, 0.8);
+}
+
+.bg-img-link:active {
+    opacity: 0.6;
 }
 
 /* FORM */
 .form {
     width: 640px;
+    background-color: #fff;
+    padding: 60px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+}
+
+.form-heading {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 80px;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+.input {
+    display: block;
+    border: 0;
+    padding-top: 35px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #000;
+}
+
+.name-input {
+    padding: 0;
+    padding-bottom: 11px;
+}
+
+.button {
+    display: block;
+}
+
+.form-button {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-top: 60px;
+    margin-bottom: 8px;
+    background-color: #655AF2;
+    color: #fff;
+    transition: background-color 0.4s ease;
+}
+
+.form-button:hover {
+    background-color: #444;
+}
+
+.form-button {
+opacity: 0.6;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 15px;
+    color: #555555;
+}
+
+.form-link {
+    text-decoration-line: underline;
+    color: #F03535;
+    margin-left: 4px;
+    transition: color 0.4s ease;
+}
+
+.form-link:hover {
+    color: #808080;
 }
