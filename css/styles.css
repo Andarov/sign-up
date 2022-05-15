@@ -49,7 +49,7 @@ html {
     outline-offset: 2px;
 }
 
-.bg-img-link:focus {
+.about__link:focus {
     outline: 4px dashed #555;
 }
 
@@ -61,7 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #E7E7E7;
+    background-color: #F1F4FF;
     font-family: "Inter", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -82,9 +82,9 @@ a {
 
 .container {
     width: 100%;
-    max-width: 1260px;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 1192px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -93,19 +93,19 @@ a {
     flex-grow: 1;
 } 
 
-.sign-up-box {
+
+.sign-up {
     display: flex;
     align-items: stretch;
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
-/* BG-IMG */
-.bg-img {
+/* About*/
+.about {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 640px;
+    width: 50%;
     border-radius: 20px;
     background-image: url("../img/Rectangle.jpg");
     background-size: cover;
@@ -114,13 +114,13 @@ a {
     margin-right: 12px;
 }
 
-.bg-img-top {
+.about__top {
     flex-grow: 1;
     padding: 60px;
     padding-bottom: 0;
 }
 
-.definition {
+.about__definition {
     display: inline-block;
     font-weight: 500;
     font-size: 14px;
@@ -132,12 +132,12 @@ a {
     border-radius: 20px;
     margin-bottom: 60px;
 }
-.bg-img-box {
+.about__box {
     width: 389px;
     color: #fff;
     padding-bottom: 203px;
 }
-.bg-img-heading {
+.about__heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 46px;
@@ -145,7 +145,7 @@ a {
     margin: 0;
     margin-bottom: 25px;
 }
-.bg-img-text {
+.about__text {
     width: 347px;
     font-weight: 400;
     line-height: 26px;
@@ -153,7 +153,7 @@ a {
     margin: 0;
 }
 
-.bg-img-link {
+.about__link {
     display: block;
     font-weight: 700;
     font-size: 19px;
@@ -166,24 +166,24 @@ a {
     transition: background-color 0.4s ease;
 }
 
-.bg-img-link:hover {
+.about__link:hover {
     background-color: rgba(77, 196, 144, 0.8);
 }
 
-.bg-img-link:active {
+.about__link:active {
     opacity: 0.6;
 }
 
 /* FORM */
 .form {
-    width: 640px;
+    width: 50%;
     background-color: #fff;
     padding: 60px;
     padding-bottom: 40px;
     border-radius: 20px;
 }
 
-.form-heading {
+.form__heading {
     font-weight: 600;
     font-size: 32px;
     line-height: 42px;
@@ -191,12 +191,14 @@ a {
     margin: 0;
     margin-bottom: 80px;
 }
-.name {
+
+.form__name {
     display: flex;
     flex-direction: column;
     width: 450px;
 }
-.input {
+
+.form__input {
     display: block;
     border: 0;
     padding-top: 35px;
@@ -204,39 +206,40 @@ a {
     border-bottom: 1px solid #000;
 }
 
-.name-input {
-    padding: 0;
+.form__input--name {
+    padding-top: 0;
     padding-bottom: 11px;
 }
 
-.button {
+.form__button-wrapper {
     display: block;
 }
 
-.form-button {
+.form__button {
     width: 100%;
+    border: none;
     border-radius: 10px;
     padding: 20px;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
     margin-top: 60px;
     margin-bottom: 8px;
-    background-color: #655AF2;
+    background-color: #655AF2;;
     color: #fff;
     transition: background-color 0.4s ease;
 }
 
-.form-button:hover {
-    background-color: #444;
+.form__button:hover {
+    opacity: 0.8;
 }
 
-.form-button {
+.form__button:active {
 opacity: 0.6;
 }
 
-.form-bottom {
+.form__bottom {
     display: flex;
     justify-content: center;
     font-size: 11px;
@@ -244,14 +247,14 @@ opacity: 0.6;
     color: #555555;
 }
 
-.form-link {
+.form__link {
     text-decoration-line: underline;
     color: #F03535;
     margin-left: 4px;
     transition: color 0.4s ease;
 }
 
-.form-link:hover {
+.form__link:hover {
     color: #808080;
 }
 
@@ -262,7 +265,7 @@ opacity: 0.6;
        only screen and ( min-resolution: 124.8dpi ),
        only screen and ( min-resolution: 1.3dppx ) {
 
-       .bg-img {
+       .about {
             background-image: url("../img/Rectangle@2x.jpg");
        }
 
